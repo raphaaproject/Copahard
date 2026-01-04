@@ -1,0 +1,176 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(135deg, #0b0c10, #1a1a2f);
+  color: #fff;
+  overflow-x: hidden;
+  text-align: center;
+}
+
+/* Container principal */
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 30px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Cabeçalho */
+header h1 {
+  font-size: 5rem;
+  font-weight: 900;
+  background: linear-gradient(90deg, #1e90ff, #63b3ed);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 0 0 25px #1e90ff80;
+  margin-bottom: 15px;
+}
+
+.perfil a {
+  font-size: 1.5rem;
+  color: #1e90ff;
+  text-decoration: none;
+  padding: 8px 25px;
+  border-radius: 12px;
+  border: 2px solid #1e90ff;
+  margin-bottom: 50px;
+  display: inline-block;
+  transition: all 0.3s ease;
+}
+
+.perfil a:hover {
+  color: #63b3ed;
+  box-shadow: 0 0 20px #63b3ed80;
+}
+
+.perfil i {
+  margin-right: 8px;
+}
+
+/* Fases do Campeonato em linha */
+.fases {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 50px;
+}
+
+.card {
+  flex: 1 1 150px;
+  margin: 10px;
+  background-color: rgba(30, 144, 255, 0.1);
+  border-left: 5px solid #1e90ff;
+  border-radius: 10px;
+  padding: 20px;
+  font-size: 1.2rem;
+  transition: all 0.3s ease;
+  min-width: 150px;
+}
+
+.card:hover {
+  background-color: rgba(30, 144, 255, 0.25);
+  transform: translateY(-5px);
+  box-shadow: 0 0 25px #1e90ff60;
+}
+
+/* Botão de inscrição */
+.inscricao {
+  margin-bottom: 50px;
+}
+
+.button-inscricao {
+  display: inline-block;
+  padding: 20px 70px;
+  font-size: 1.7rem;
+  font-weight: 700;
+  background-color: #1e90ff;
+  color: #fff;
+  border-radius: 15px;
+  text-decoration: none;
+  box-shadow: 0 0 35px #1e90ff80;
+  transition: all 0.3s ease;
+}
+
+.button-inscricao:hover {
+  background-color: #63b3ed;
+  transform: scale(1.12);
+  box-shadow: 0 0 50px #63b3ed80;
+}
+
+/* Termos e informações adicionais */
+section.termos p,
+section.info-adicional p {
+  font-size: 1.3rem;
+  margin: 10px 0;
+  padding: 12px 20px;
+  border-left: 5px solid #1e90ff;
+  border-radius: 8px;
+  text-align: left;
+}
+
+section.termos p:hover,
+section.info-adicional p:hover {
+  background-color: rgba(30, 144, 255, 0.08);
+  transform: translateX(3px);
+}
+
+/* Rodapé */
+footer {
+  font-size: 1.3rem;
+  color: #888;
+  margin-top: 50px;
+  padding-top: 15px;
+  border-top: 2px solid #1e90ff;
+}
+
+/* Responsividade */
+@media screen and (max-width: 768px) {
+  header h1 {
+    font-size: 3rem;
+  }
+  .perfil a {
+    font-size: 1.2rem;
+    padding: 6px 15px;
+  }
+  .card {
+    font-size: 1rem;
+    padding: 15px;
+  }
+  .button-inscricao {
+    font-size: 1.4rem;
+    padding: 15px 50px;
+  }
+  
+  header {
+    margin-top: 10px;
+  }
+}
+.logo-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px; /* espaço entre logo e título */
+  margin-bottom: 20px;
+}
+
+.logo {
+  width: 60px;       /* tamanho da logo */
+  height: 60px;
+  border-radius: 50%; /* deixa redonda */
+  object-fit: cover;  /* garante que a imagem não distorça */
+  border: 2px solid #1e90ff; /* opcional: borda azul neon */
+  box-shadow: 0 0 15px #1e90ff80; /* efeito glow */
+  margin-top: 0;
+}
